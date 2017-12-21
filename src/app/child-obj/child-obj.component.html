@@ -1,0 +1,9 @@
+
+
+<p *ngIf="!show">{{name}}</p>
+<input *ngIf="show" type="text" value="{{name}}" (keyup)="changeName($event.target.value)" />
+<button type="button" (click)="toggle()">Click Me</button>
+
+<div *ngFor= "let item of list">
+    {{item.name}}
+</div>
